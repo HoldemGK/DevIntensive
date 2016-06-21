@@ -15,4 +15,16 @@
     <dimen name="spacing_medium_32">32dp</dimen>
     <dimen name="spacing_large_56">56dp</dimen>
     <dimen name="spacing_larger_72">72dp</dimen>
+
+    <!--Mobile - Keylines and margins-->
+    <dimen name="mobile_screen_edge_margins_16">16dp</dimen>
+    <dimen name="mobile_content_icon_left_margin_72">72dp</dimen>
+    <dimen name="mobile_horizontal_margins_16">16dp</dimen>
+
+    <!--Mobile - Vertical spacing-->
+    <dimen name="mobile_statusbar_24">24dp</dimen>
+    <dimen name="mobile_toolbar_56">56dp</dimen>
+    <dimen name="mobile_subtitle_48">48dp</dimen>
+    <dimen name="list_item_72">72dp</dimen>
+
 </resources>
