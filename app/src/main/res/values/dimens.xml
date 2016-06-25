@@ -4,14 +4,18 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!--Sizes-->
+    <dimen name="line_size">1dp</dimen>
     <dimen name="size_small_24">24dp</dimen>
     <dimen name="size_medium_56">56dp</dimen>
     <dimen name="size_large_72">72dp</dimen>
+    <dimen name="size_large_72">72dp</dimen>
+    <dimen name="size_larger_80">80dp</dimen>
 
     <!--Spaces-->
     <dimen name="spacing_small_8">8dp</dimen>
     <dimen name="spacing_normal_16">16dp</dimen>
     <dimen name="spacing_medial_24">24dp</dimen>
+    <dimen name="spacing_half_normal_28">28dp</dimen>
     <dimen name="spacing_medium_32">32dp</dimen>
     <dimen name="spacing_large_56">56dp</dimen>
     <dimen name="spacing_larger_72">72dp</dimen>
@@ -34,29 +38,28 @@
     <dimen name="mobile_list_vert_72">72dp</dimen>
     <dimen name="mobile_title_vert_72">72dp</dimen>
 
-    <!--Tablet margin and vertical size-->
-    <dimen name="tablet_screen_margins_lr_24">24dp</dimen>
-    <dimen name="tablet_card_lr_24">24dp</dimen>
-    <dimen name="tablet_card_margin_lr_32">32dp</dimen>
-    <dimen name="tablet_screen_margin_lr_52">52dp</dimen>
-    <dimen name="tablet_icons_distance_margin_52">52dp</dimen>
-    <dimen name="tablet_content_margin_l_80">80dp</dimen>
-    <dimen name="tablet_cardnav_margin_l_96">96dp</dimen>
-    <dimen name="tablet_card_l_104">104dp</dimen>
-    <dimen name="tablet_nav_margin_l_104">104dp</dimen>
-
-    <dimen name="tablet_space_vert_8">8dp</dimen>
-    <dimen name="tablet_statusbar_vert_24">24dp</dimen>
-    <dimen name="tablet_subtitle_vert_48">48dp</dimen>
-    <dimen name="tablet_list_vert_64">64dp</dimen>
-    <dimen name="tablet_toolbar_vert_64">64dp</dimen>
-    <dimen name="tablet_list_vert_72">72dp</dimen>
-    <dimen name="tablet_title_vert_80">80dp</dimen>
+    <!--Margins-->
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_56">56dp</dimen>
+    <dimen name="margin_72">72dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_96">96dp</dimen>
+    <dimen name="margin_104">104dp</dimen>
 
     <!--Touch target size-->
     <dimen name="touch_avatar_40">40dp</dimen>
     <dimen name="touch_icon_24dp">24dp</dimen>
     <dimen name="touch_target_48dp">48dp</dimen>
     <dimen name="touch_button_36dp">36dp</dimen>
+
+    <!-- Font sizes -->
+    <dimen name="font_small_12">12sp</dimen>
+    <dimen name="font_normal_15">15sp</dimen>
+    <dimen name="font_large_12">18sp</dimen>
+    <dimen name="font_larger_12">22sp</dimen>
 
 </resources>
