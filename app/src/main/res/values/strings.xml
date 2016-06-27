@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Васильев Александр</string>
+    <string name="hint_phone">Мобильный</string>
+    <string name="text_phone">+7 (999) 987-65-43</string>
+    <string name="hint_mail">E-mail</string>
+    <string name="text_mail">mail@gmail.com</string>
+    <string name="hint_vk">Профиль в VK</string>
+    <string name="text_vk">vk.com/vkvkvkvk</string>
+    <string name="hint_git">Репозиторий</string>
+    <string name="text_git">github.com/HoldemGK/DevIntensive</string>
+    <string name="hint_about_me">О себе</string>
+    <string name="text_about_me">Android - Forever!</string>
+
+    <string name="rating_value">5</string>
+    <string name="rating_text">Рейтинг</string>
+    <string name="code_lines_value">555</string>
+    <string name="code_lines__text">Написано строк кода</string>
+    <string name="projects_value">5</string>
+    <string name="projects_text">Проектов</string>
 </resources>
