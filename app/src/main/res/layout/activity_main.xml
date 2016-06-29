@@ -1,40 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     tools:context=".ui.activities.MainActivity"
     android:id="@+id/navigation_drawer"
     android:layout_height="match_parent"
-
     android:layout_width="match_parent">
 
-
     <android.support.design.widget.CoordinatorLayout
-
 
         android:id="@+id/main_coordinator_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appbar_layout"
             android:theme="@style/AppTheme.AppBarOverlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:background="@color/color_primary">
-
+            
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsing_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 app:contentScrim="@color/color_primary"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
+                
                 <ImageView
                     android:id="@+id/user_photo_img"
                     android:layout_width="match_parent"
@@ -53,7 +46,9 @@
 
             </android.support.design.widget.CollapsingToolbarLayout>
 
+
         </android.support.design.widget.AppBarLayout>
+
 
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -111,7 +106,7 @@
                             style="@style/text.up"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="555"/>
+                            android:text="2500"/>
 
                         <TextView
                             style="@style/text.down"
@@ -151,7 +146,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-
                     style="@style/row_linear"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -165,7 +159,6 @@
                         android:layout_width="0dp"
                         android:layout_height="@dimen/size_large_72">
 
-
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -175,11 +168,12 @@
                                 android:id="@+id/phone_et"
                                 android:inputType="phone"
                                 android:text="+987654321"
-                                android:hint="phone Number"/>
+                                android:hint="@string/phone"/>
                         </android.support.design.widget.TextInputLayout>
 
                     </LinearLayout>
 
+                    <!--style="@style/icon.right"-->
                     <ImageView
                         android:id="@+id/call_img"
                         style="@style/icon.right"
@@ -214,17 +208,17 @@
                             <EditText
                                 style="@style/edit"
                                 android:id="@+id/email_et"
-                                android:hint="e_mail"
+                                android:hint="@string/e_mail"
                                 android:inputType="textEmailAddress"
                                 android:text="gk707@mail.ru"/>
                         </android.support.design.widget.TextInputLayout>
-
 
                     </LinearLayout>
 
                     <ImageView
                         style="@style/icon.right"
                         android:src="@drawable/ic_send_black_24dp"/>
+
                 </LinearLayout>
 
                 <View
@@ -232,6 +226,7 @@
                     android:layout_height="@dimen/line_size"
                     android:background="@color/grey_light"
                     android:layout_marginLeft="@dimen/spacing_larger_72"/>
+
                 <LinearLayout
                     style="@style/row_linear"
                     android:layout_width="match_parent"
@@ -255,13 +250,15 @@
                                 android:id="@+id/vk_et"
                                 android:hint="@string/vk"
                                 android:inputType="textUri"
-                                android:text="vk.com/vkvkvkv"/>
+                                android:text="vk.com/rain_man"/>
                         </android.support.design.widget.TextInputLayout>
+
                     </LinearLayout>
 
                     <ImageView
                         style="@style/icon.right"
                         android:src="@drawable/ic_visibility_black_24dp"/>
+
                 </LinearLayout>
 
                 <View
@@ -278,13 +275,16 @@
                     <ImageView
                         style="@style/icon.left"
                         android:src="@drawable/ic_github"/>
+
                     <LinearLayout
                         style="@style/data_linear"
                         android:layout_width="0dp"
                         android:layout_height="@dimen/size_large_72">
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
+
                             <EditText
                                 style="@style/edit"
                                 android:id="@+id/github_et"
@@ -298,6 +298,7 @@
                     <ImageView
                         style="@style/icon.right"
                         android:src="@drawable/ic_visibility_black_24dp"/>
+
                 </LinearLayout>
 
                 <View
@@ -310,16 +311,20 @@
                     style="@style/row_linear"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         style="@style/icon.left"
                         android:src="@drawable/ic_account_circle_black_24dp"/>
+
                     <LinearLayout
                         style="@style/data_linear"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content">
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
+
                             <EditText
                                 style="@style/edit"
                                 android:id="@+id/bio_et"
@@ -345,8 +350,9 @@
             app:layout_anchor="@id/appbar_layout"
             app:layout_anchorGravity="bottom|right"
             android:layout_marginRight="@dimen/fab_right_space"/>
-    </android.support.design.widget.CoordinatorLayout>
 
+    </android.support.design.widget.CoordinatorLayout>
+    
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="match_parent"
@@ -354,6 +360,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer_menu">
+
     </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
