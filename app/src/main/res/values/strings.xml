@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Коропенко Дмитрий</string>
+    <string name="app_name">Васильев Александр</string>
 
     <!--EditText's hints-->
     <string name="hint_mobile">Мобильный</string>
@@ -22,8 +22,8 @@
     <string name="menu_exit">Выход</string>
 
     <!--Временный текст для информации-->
-    <string name="my_profile_name">Коропенко Дмитрий</string>
-    <string name="my_profile_mail">nikotin13@mail.ru</string>
+    <string name="my_profile_name">Васильев Александр</string>
+    <string name="my_profile_mail">gk707@mail.ru</string>
 
 
     <!--Работа с загрузкой фото для аватара-->
@@ -34,7 +34,7 @@
     <string name="select_img">Выберите фото</string>
 
     <!--Работа с intent-->
-    <string name="intent_error_open_message">Извините, невозможно открыть приложение</string>
+    <string name="intent_error_open_message">Невозможно запустить приложение</string>
     <string name="intent_need_permission">Для работы необходимо дать разрешения</string>
 
     <!--Экран входа-->
