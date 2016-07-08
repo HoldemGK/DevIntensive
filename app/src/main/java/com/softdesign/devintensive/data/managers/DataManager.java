@@ -1,23 +1,24 @@
 package com.softdesign.devintensive.data.managers;
 
+import com.softdesign.devintensive.utils.ConstantManager;
+
 /**
- * Created by HoldemGK on 29.06.2016.
+ * Created by smalew on 26.06.16.
  */
 public class DataManager {
-    private static DataManager INSTANCE = null;
+    private static final String TAG = ConstantManager.PREFIX_TAG + "DataManager";
 
+    private static DataManager instance = null;
     private PreferencesManager mPreferencesManager;
 
-    public DataManager() {
-        this.mPreferencesManager = new PreferencesManager();
+    public static DataManager getInstance() {
+        if (instance == null)
+            instance = new DataManager();
+        return instance;
     }
 
-
-    public static DataManager getInstance() {
-        if (INSTANCE == null) {
-            INSTANCE = new DataManager();
-        }
-        return INSTANCE;
+    private DataManager() {
+        this.mPreferencesManager = new PreferencesManager();
     }
 
     public PreferencesManager getPreferencesManager() {

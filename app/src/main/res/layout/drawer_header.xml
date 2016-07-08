@@ -1,44 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="172dp"
-                android:paddingTop="@dimen/spacing_medial_24"
-                android:paddingRight="@dimen/spacing_medial_24"
-                android:paddingLeft="@dimen/spacing_normal_16"
-                android:paddingBottom="@dimen/spacing_small_8"
-                android:background="@drawable/header_bg">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/drawer_header"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:background="@drawable/nav_header_bg"
+    >
 
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="@dimen/spacing_normal_16"/>
+    <com.softdesign.devintensive.ui.views.CircleImageView
+        android:id="@+id/menu_header_avatar"
+        style="@style/drawer_avatar"
+        android:src="@drawable/empty_avatar"/>
 
     <LinearLayout
+        style="@style/menu_header_txt_holder"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/size_medium_56"
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:gravity="center_vertical">
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/user_name_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Тимофей Коротков"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif-medium"/>
+            android:id="@+id/menu_header_user_name"
+            style="@style/drawer_txt_name"
+            />
 
         <TextView
-            android:id="@+id/user_email_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="myEmail@mail.ru"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:fontFamily="sans-serif"/>
-
+            android:id="@+id/menu_header_user_mail"
+            style="@style/drawer_txt_mail"
+            />
     </LinearLayout>
+
 
 </RelativeLayout>
