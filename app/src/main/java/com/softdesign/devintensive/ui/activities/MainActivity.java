@@ -120,10 +120,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.user_photo_change)
     RelativeLayout userPhotoChange;
 
-
-    private boolean mCurrentEditMode; //Проверка включения режима редактирования
-    private DataManager mDataManager; //Синглентон для работы с sharedPref.
-    private AppBarLayout.LayoutParams mLayoutParams = null; //Параметры тулбара.
+    //Проверка включения режима редактирования
+    private boolean mCurrentEditMode;
+    private DataManager mDataManager;
+    private AppBarLayout.LayoutParams mLayoutParams = null;
 
     private File mPhotoFile;
     private Uri mSelectedImage;
@@ -299,9 +299,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     }
 
-    /**
-     * Загружает переменные бользователя
-     */
     private void loadUserInfoValue() {
         List<String> userData = mDataManager.getPreferencesManager().loadUserProfileData();
 
@@ -324,9 +321,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 into(mAvatar);
     }
 
-    /**
-     * Сохраняет переменные пользователя
-     */
+    //Сохраняет переменные пользователя
     private void saveUserInfoValue() {
         List<String> userData = new ArrayList<>();
 
@@ -352,9 +347,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * Инициализирует view элементы пользовательского UI
-     */
+    //Инициализирует view элементы пользовательского UI
     private void setupUserInfo() {
         mUserInfoLayouts = new ArrayList<>();
         mUserInfoLayouts.add(userPhoneLayout);
@@ -387,9 +380,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
     }
 
-    /**
-     * Устанавливает тулбар вместо стандартного
-     */
+    //Устанавливает тулбар вместо стандартного
     private void setupToolbar() {
         setSupportActionBar(mToolbar);
 
@@ -402,9 +393,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
     }
 
-    /**
-     * Устанавливает взаимодействие с элементами меню выдвижной палели.
-     */
+    //Устанавливает взаимодействие с элементами меню выдвижной палели.
     private void setupNavigation() {
         final NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -428,8 +417,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         });
     }
 
-    //************************************************************
-    //Код для работы с загрузкой фотографии из галереи или камеры
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
@@ -568,18 +555,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
     }
 
-    /**
-     * Открытие настроек permissions в случае отсутвия прав.
-     */
+    //Открытие настроек permissions в случае отсутвия прав.
     public void openApplicationSetting() {
         Intent appSettingIntent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + getPackageName()));
 
         startActivityForResult(appSettingIntent, ConstantManager.PERMISSION_REQUEST_KEY);
     }
 
-    /**
-     * Закрытие выдвижного меню по нажатию кнопки "Назад"
-     */
+    //Закрытие выдвижного меню по нажатию кнопки "Назад"
     @Override
     public void onBackPressed() {
         if (mNavigationDrawer.isDrawerOpen(GravityCompat.START))
