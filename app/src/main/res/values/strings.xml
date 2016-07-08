@@ -17,4 +17,10 @@
     <string name="code_lines__text">Написано строк кода</string>
     <string name="projects_value">5</string>
     <string name="projects_text">Проектов</string>
+    <string name="user_profile.placeholder.image">Изменить фотографию профиля</string>
+    <string name="user_profile.dialog.gallery">Загрузить из галлереи</string>
+    <string name="user_profile.gallery.camera">Сделать снимок</string>
+    <string name="user_profile.gallery.cancel">Отмена</string>
+    <string name="user_profile.dialog.title">Изменить фотографию профиля</string>
+    <string name="user_profile.chose.message">выберите фото</string>
 </resources>

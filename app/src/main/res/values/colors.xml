@@ -12,6 +12,7 @@
     <color name="transparent">#393737</color>
     <color name="green">#0aed0e</color>
     <color name="green_dark">#f3034919</color>
+    <color name="grey_background">#454545</color>
 
     <color name="grey">#5d5d5d</color>
     <color name="grey_light">#9c9c9c</color>
