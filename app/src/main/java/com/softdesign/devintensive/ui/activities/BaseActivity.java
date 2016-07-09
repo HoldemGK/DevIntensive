@@ -11,7 +11,7 @@ import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.utils.ConstantManager;
 
 /**
- * Created by smalew on 26.06.16.
+ * Created by HoldeGK on 26.06.16.
  */
 public class BaseActivity extends AppCompatActivity {
     public static String TAG = ConstantManager.PREFIX_TAG + "BaseActivity";

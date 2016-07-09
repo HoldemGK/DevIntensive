@@ -1,8 +1,6 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/color_primary</item>
         <item name="colorPrimaryDark">@color/color_primary_dark</item>
         <item name="colorAccent">@color/color_accent</item>
@@ -16,7 +14,6 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
-    <!--Text Style-->
     <style name="text">
         <item name="android:textStyle">normal</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
@@ -39,9 +36,7 @@
     <style name="drawable_head_txt.mail">
         <item name="android:textStyle">normal</item>
     </style>
-    <!--/Text style-->
 
-    <!--HEAD-->
     <style name="profile_info">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>>
@@ -60,11 +55,7 @@
     <style name="profile.txt">
         <item name="android:textSize">@dimen/font_size_16</item>
     </style>
-    <!--/HEAD-->
 
-
-    <!--Body-->
-    <!-- Information container -->
     <style name="user_info_container">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/size_72</item>
@@ -85,7 +76,6 @@
         <item name="android:layout_marginRight">@dimen/spacing_16</item>
     </style>
 
-    <!--InputTextEdits-->
     <style name="input_text_layout">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -135,9 +125,7 @@
         <item name="android:enabled">true</item>
         <item name="android:hint">@string/hint_password</item>
     </style>
-    <!--/Body-->
 
-    <!--Separator-->
     <style name="separator_horizontal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">2dp</item>
@@ -149,13 +137,11 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/background_separator</item>
     </style>
-    <!--/Separator-->
 
     <style name="custom_dialog">
         <item name="android:fullDark">@android:color/transparent</item>
     </style>
 
-    <!--Drawable Menu-->
     <style name="drawer_header">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/size_172</item>
@@ -187,6 +173,5 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/my_profile_mail</item>
     </style>
-    <!--/Drawable Menu-->
 
 </resources>

@@ -23,7 +23,7 @@ import com.softdesign.devintensive.utils.ConstantManager;
 import com.softdesign.devintensive.utils.RoundedAvatarDrawable;
 
 /**
- * Кастомная ImageView, которая позволяет сделать круглое фото для аватара
+ * ImageView, которая позволяет сделать круглое фото для аватара
  * Вкладываем друг в друга setters для получение единого результата при
  * загрузке разных данных.
  */

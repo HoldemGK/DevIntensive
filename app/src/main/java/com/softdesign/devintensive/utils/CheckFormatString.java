@@ -12,12 +12,10 @@ import com.vicmikhailau.maskededittext.MaskedWatcher;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Класс проверки введенных пользователем данных
- */
-public class CheckInputInformation extends MaskedWatcher {
 
-    private final String TAG = "CheckInputInformation";
+public class CheckFormatString extends MaskedWatcher {
+
+    private final String TAG = "CheckFormatString";
 
     //Регулярные выражения для сравнения.
     private final String phoneNumberPattern = "^\\d{11,20}$";
@@ -37,7 +35,7 @@ public class CheckInputInformation extends MaskedWatcher {
     private Pattern mPattern;
     private Matcher mMatcher;
 
-    public CheckInputInformation(Context context, MaskedEditText userInfo, ImageView button, TextInputLayout textInputLayout) {
+    public CheckFormatString(Context context, MaskedEditText userInfo, ImageView button, TextInputLayout textInputLayout) {
         super(null);
 
         this.mContext = context;

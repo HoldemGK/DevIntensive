@@ -55,8 +55,8 @@ public class InfoPanelBehavior extends CoordinatorLayout.Behavior<LinearLayout> 
             mTopMarginMax = mNestedScrollParam.topMargin;
         }
 
-        //Вычисление в % перелистывание ScrollView
-        // и пропорциональное изменение отступов.
+        /*Вычисление в % перелистывание ScrollView
+        и пропорциональное изменение отступов*/
         float check = mMaxScroll - child.getY();
         if (check < mScrollSize && check > 0) {
             mProcScroll = (100 * (mMaxScroll - child.getY())) / mScrollSize;

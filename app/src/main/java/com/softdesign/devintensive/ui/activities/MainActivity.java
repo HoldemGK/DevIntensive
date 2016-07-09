@@ -37,7 +37,7 @@ import android.widget.RelativeLayout;
 
 import com.softdesign.devintensive.R;
 import com.softdesign.devintensive.data.managers.DataManager;
-import com.softdesign.devintensive.utils.CheckInputInformation;
+import com.softdesign.devintensive.utils.CheckFormatString;
 import com.softdesign.devintensive.utils.ConstantManager;
 import com.squareup.picasso.Picasso;
 import com.vicmikhailau.maskededittext.MaskedEditText;
@@ -369,7 +369,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mUserAction.add(mToRepo);
 
         for (int i = 0; i < mUserAction.size(); i++) {
-            mUserInfo.get(i).addTextChangedListener(new CheckInputInformation(getBaseContext(),
+            mUserInfo.get(i).addTextChangedListener(new CheckFormatString(getBaseContext(),
                     mUserInfo.get(i),
                     mUserAction.get(i),
                     mUserInfoLayouts.get(i)));
