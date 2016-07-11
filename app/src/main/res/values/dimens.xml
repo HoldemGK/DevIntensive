@@ -3,65 +3,41 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <!--Sizes-->
-    <dimen name="line_size">1dp</dimen>
-    <dimen name="size_small_24">24dp</dimen>
-    <dimen name="size_medium_56">56dp</dimen>
-    <dimen name="size_large_72">72dp</dimen>
-    <dimen name="size_larger_80">80dp</dimen>
+    <!--fonts-->
+    <dimen name="font_size_8">8sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
 
-    <!--Spaces-->
-    <dimen name="spacing_small_8">8dp</dimen>
-    <dimen name="spacing_normal_16">16dp</dimen>
-    <dimen name="spacing_medial_24">24dp</dimen>
-    <dimen name="spacing_half_normal_28">28dp</dimen>
-    <dimen name="spacing_medium_32">32dp</dimen>
-    <dimen name="spacing_large_56">56dp</dimen>
-    <dimen name="spacing_larger_72">72dp</dimen>
+    <!--sizes-->
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_56">56dp</dimen>
+    <dimen name="size_60">60dp</dimen>
+    <dimen name="size_72">72dp</dimen>
+    <dimen name="size_96">96dp</dimen>
+    <dimen name="size_172">172.0dp</dimen>
+    <dimen name="size_256">256dp</dimen>
+    <dimen name="fab_right_margin">8dp</dimen>
 
-    <!--Mobile margin and vertical size-->
+    <!--spaces-->
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_22">22dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_28">28dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
+    <dimen name="spacing_48">48dp</dimen>
+    <dimen name="spacing_56">56dp</dimen>
+    <dimen name="spacing_72">72dp</dimen>
+    <dimen name="spacing_80">80dp</dimen>
+    <dimen name="spacing_88">88dp</dimen>
+    <dimen name="spacing_96">96dp</dimen>
+    <dimen name="spacing_104">104dp</dimen>
+    <dimen name="new_photo_size">90dp</dimen>
 
-    <dimen name="mobile_floating_action_button_56">56dp</dimen>
-    <dimen name="mobile_screen_margin_lr_16">16dp</dimen>
-    <dimen name="mobile_content_margin_l_72">72dp</dimen>
-    <dimen name="mobile_horizontal_margin_16">16dp</dimen>
-    <dimen name="mobile_right_floating_button_32">32dp</dimen>
-    <dimen name="mobile_screen_margin_r_56">56dp</dimen>
-    <dimen name="mobile_navigation_margin_r_56">56dp</dimen>
-
-    <dimen name="mobile_space_vert_8">8dp</dimen>
-    <dimen name="mobile_statusbar_vert_24">24dp</dimen>
-    <dimen name="mobile_subtitle_vert_48">48dp</dimen>
-    <dimen name="mobile_account_vert_48">48dp</dimen>
-    <dimen name="mobile_toolbar_vert_56">56dp</dimen>
-    <dimen name="mobile_list_vert_72">72dp</dimen>
-    <dimen name="mobile_title_vert_72">72dp</dimen>
-
-    <!--Margins-->
-    <dimen name="margin_8">8dp</dimen>
-    <dimen name="margin_16">16dp</dimen>
-    <dimen name="margin_24">24dp</dimen>
-    <dimen name="margin_32">32dp</dimen>
-    <dimen name="margin_48">48dp</dimen>
-    <dimen name="margin_56">56dp</dimen>
-    <dimen name="margin_72">72dp</dimen>
-    <dimen name="margin_80">80dp</dimen>
-    <dimen name="margin_96">96dp</dimen>
-    <dimen name="margin_104">104dp</dimen>
-
-    <!--Touch target size-->
-    <dimen name="touch_avatar_40">40dp</dimen>
-    <dimen name="touch_icon_24dp">24dp</dimen>
-    <dimen name="touch_target_48dp">48dp</dimen>
-    <dimen name="touch_button_36dp">36dp</dimen>
-
-    <!-- Font sizes -->
-    <dimen name="font_small_12">12sp</dimen>
-    <dimen name="font_normal_15">15sp</dimen>
-    <dimen name="font_large_12">18sp</dimen>
-    <dimen name="font_larger_12">22sp</dimen>
-
-    <dimen name="profile_image_size">256dp</dimen>
-    <dimen name="fab_right_space">0dp</dimen>
 
 </resources>
+

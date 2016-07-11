@@ -6,24 +6,17 @@ import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 
-/**
- * Created by HoldemGK on 29.06.2016.
- */
 public class RoundedAvatarDrawable extends Drawable {
-
     private final Bitmap mBitmap;
-    private final RectF mRectF;
     private final Paint mPaint;
+    private final RectF mRectF;
     private final int mBitmapWidth;
     private final int mBitmapHeight;
-
 
     public RoundedAvatarDrawable(Bitmap bitmap) {
         mBitmap = bitmap;
@@ -41,6 +34,13 @@ public class RoundedAvatarDrawable extends Drawable {
     @Override
     public void draw(Canvas canvas) {
         canvas.drawOval(mRectF, mPaint);
+    }
+
+    @Override
+    protected void onBoundsChange(Rect bounds) {
+        super.onBoundsChange(bounds);
+
+        mRectF.set(bounds);
     }
 
     @Override
@@ -82,28 +82,13 @@ public class RoundedAvatarDrawable extends Drawable {
         invalidateSelf();
     }
 
+    @Override
+    public void setDither(boolean dither) {
+        mPaint.setDither(dither);
+        invalidateSelf();
+    }
 
     public Bitmap getBitmap() {
         return mBitmap;
-    }
-
-    public static Bitmap getRoundedBitmap(Bitmap bitmap) {
-        final Bitmap output = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
-        final Canvas canvas = new Canvas(output);
-
-        final Paint paint = new Paint();
-        final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
-        final RectF rectF = new RectF(rect);
-
-        paint.setAntiAlias(true);
-        canvas.drawARGB(0, 0, 0, 0);
-        canvas.drawOval(rectF, paint);
-
-        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
-        canvas.drawBitmap(bitmap, rect, rect, paint);
-
-        bitmap.recycle();
-
-        return output;
     }
 }

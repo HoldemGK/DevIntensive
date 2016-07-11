@@ -1,20 +1,50 @@
 <resources>
     <string name="app_name">Васильев Александр</string>
-    <string name="hint_phone">Мобильный</string>
-    <string name="text_phone">+7 (999) 987-65-43</string>
-    <string name="hint_mail">E-mail</string>
-    <string name="text_mail">mail@gmail.com</string>
-    <string name="hint_vk">Профиль в VK</string>
-    <string name="text_vk">vk.com/vkvkvkvk</string>
-    <string name="hint_git">Репозиторий</string>
-    <string name="text_git">github.com/HoldemGK/DevIntensive</string>
-    <string name="hint_about_me">О себе</string>
-    <string name="text_about_me">Android - Forever!</string>
 
-    <string name="rating_value">5</string>
-    <string name="rating_text">Рейтинг</string>
-    <string name="code_lines_value">555</string>
-    <string name="code_lines__text">Написано строк кода</string>
-    <string name="projects_value">5</string>
-    <string name="projects_text">Проектов</string>
+    <!--Вставки-->
+    <string name="hint_mobile">Мобильный</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_vk">Профиль в VK</string>
+    <string name="hint_github">Репозиторий</string>
+    <string name="hint_about">О себе</string>
+    <string name="hint_login">E-mail</string>
+    <string name="hint_password">Пароль</string>
+
+    <!--Маски-->
+    <string name="mask_phone">Маска для номера +х ххх ххх-хх-хх</string>
+    <string name="mask_mail">Маска для адреса xxx@xx.xx</string>
+    <string name="mask_vk">Маска для адреса vk.com/xxx</string>
+    <string name="mask_git">Маска для адреса github.com/xxx</string>
+
+    <!--Drawable-->
+    <string name="menu_my_profile">Мой профиль</string>
+    <string name="menu_my_contacts">Контакты</string>
+    <string name="menu_exit">Выход</string>
+
+    <!--Инфо-->
+    <string name="my_profile_name">Васильев Александр</string>
+    <string name="my_profile_mail">gk707@mail.ru</string>
+
+
+    <!--Для аватара-->
+    <string name="avatar_load">Загрузите фотографию профиля</string>
+    <string name="avatar_load_from_gallary">Загрузить из галареи</string>
+    <string name="avatar_load_from_camera">Сфотографировать</string>
+    <string name="avatar_cancel">Отмена</string>
+    <string name="select_img">Выберите фото</string>
+
+    <!--intent события-->
+    <string name="intent_error_open_message">Невозможно запустить приложение</string>
+    <string name="intent_need_permission">Для работы необходимы разрешения</string>
+
+    <!--Экран входа-->
+    <string name="login_forgot_password">Забыли пароль?</string>
+    <string name="login_btn">Войти</string>
+    <string name="login_header_text">ВОЙТИ</string>
+
+    <!--Ошибки не верных данных-->
+    <string name="error_user_phone_message">Некорректный номер мобильного</string>
+    <string name="error_user_mail_message">Некорректный E-mail</string>
+    <string name="error_user_vk_message">Некорректный адрес страницы ВК</string>
+    <string name="error_user_github_message">Некорректный адрес git</string>
 </resources>
