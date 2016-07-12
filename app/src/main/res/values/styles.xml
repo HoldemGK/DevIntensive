@@ -92,38 +92,38 @@
     <style name="edit_text.mobile">
         <item name="android:inputType">phone</item>
         <item name="android:maxLength">25</item>
-        <item name="android:hint">@string/hint_mobile</item>
+        <item name="android:hint">@string/profile.phone.hint</item>
     </style>
     <style name="edit_text.email">
         <item name="android:inputType">textEmailAddress</item>
-        <item name="android:hint">@string/auth_email</item>
+        <item name="android:hint">@string/profile.mail.hint</item>
     </style>
     <style name="edit_text.vk">
         <item name="android:inputType">textImeMultiLine</item>
         <item name="android:maxLines">2</item>
-        <item name="android:hint">@string/hint_vk</item>
+        <item name="android:hint">@string/profile.vk.hint</item>
     </style>
     <style name="edit_text.repo">
         <item name="android:inputType">textMultiLine</item>
         <item name="android:maxLines">3</item>
-        <item name="android:hint">@string/hint_github</item>
+        <item name="android:hint">@string/profile.github.hint</item>
     </style>
     <style name="edit_text.self">
         <item name="android:inputType">textMultiLine</item>
         <item name="android:minLines">1</item>
-        <item name="android:hint">@string/hint_about</item>
+        <item name="android:hint">@string/profile.bio.hint</item>
     </style>
     <style name="edit_text.login">
         <item name="android:inputType">text</item>
         <item name="android:focusable">true</item>
         <item name="android:enabled">true</item>
-        <item name="android:hint">@string/hint_login</item>
+        <item name="android:hint">@string/login.hint</item>
     </style>
     <style name="edit_text.password">
         <item name="android:inputType">textPassword</item>
         <item name="android:focusable">true</item>
         <item name="android:enabled">true</item>
-        <item name="android:hint">@string/auth_password</item>
+        <item name="android:hint">@string/password.hint</item>
     </style>
 
     <style name="separator_horizontal">
