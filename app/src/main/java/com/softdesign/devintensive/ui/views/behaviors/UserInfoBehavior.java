@@ -1,14 +1,14 @@
 package com.softdesign.devintensive.ui.views.behaviors;
 
 import android.content.Context;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Parcelable;
+import android.content.res.TypedArray;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.widget.NestedScrollView;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.view.ViewGroup;
+
+import com.softdesign.devintensive.R;
 
 import com.softdesign.devintensive.utils.ConstantManager;
 
@@ -16,60 +16,50 @@ import com.softdesign.devintensive.utils.ConstantManager;
 /**
  * Класс для изменения положения панели информации относительно другого элемента.
  */
-public class UserInfoBehavior extends CoordinatorLayout.Behavior<LinearLayout> {
-    private static final String TAG = ConstantManager.PREFIX_TAG + "UserInfoBehavior";
+public class UserInfoBehavior extends CoordinatorLayout.Behavior<ViewGroup> {
 
-    //Переменные для управления отступами LineatLayout
-    private float mMinScroll, mMaxScroll;
-    private float mMaxPaddingSize;
-    private float mCurrentPaddingSize;
-
-    //Переменные для вычисления % передвижения ScrollView
-    private float mProcScroll;
-    private float mScrollSize;
-
-    //Переменные для управления отступом NestedScrollView
-    CoordinatorLayout.LayoutParams mNestedScrollParam;
-    private int mTopMarginMax;
+    private float mActionBarSize;
+    private float mTopPaddingMultiply = -1f;
+    private float mBottomPaddingMultiply = -1f;
 
     public UserInfoBehavior(Context context, AttributeSet attrs) {
-        mMinScroll = 0; //Начальный минимальный уровень.
+        super(context, attrs);
+        mActionBarSize = getActionBarSize(context);
     }
 
     @Override
-    public boolean layoutDependsOn(CoordinatorLayout parent, LinearLayout child, View dependency) {
+    public boolean layoutDependsOn(CoordinatorLayout parent, ViewGroup child, View dependency) {
         return dependency instanceof NestedScrollView;
     }
 
     @Override
-    public boolean onDependentViewChanged(CoordinatorLayout parent, LinearLayout child, View dependency) {
+    public boolean onDependentViewChanged(CoordinatorLayout parent, ViewGroup child, View dependency) {
 
-        //Начальная инициализация переменных
-        if (mMinScroll == 0) {
-            mMinScroll = parent.getHeight() - dependency.getHeight();
-            mMaxScroll = child.getY();
-            mScrollSize = mMaxScroll - mMinScroll;
-
-            mMaxPaddingSize = child.getPaddingTop();
-            mNestedScrollParam = (CoordinatorLayout.LayoutParams)dependency.getLayoutParams();
-            mTopMarginMax = mNestedScrollParam.topMargin;
+        if (mTopPaddingMultiply < 0) {
+            mTopPaddingMultiply = child.getPaddingTop() / dependency.getY();
         }
 
-        /*Вычисление в % перелистывание ScrollView
-        и пропорциональное изменение отступов*/
-        float check = mMaxScroll - child.getY();
-        if (check < mScrollSize && check > 0) {
-            mProcScroll = (100 * (mMaxScroll - child.getY())) / mScrollSize;
-
-            mCurrentPaddingSize = mMaxPaddingSize - (int)((mMaxPaddingSize * mProcScroll) / 100);
-            mNestedScrollParam.topMargin = mTopMarginMax - (int)((mTopMarginMax * mProcScroll) / 140);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-                child.setPaddingRelative(0, (int)mCurrentPaddingSize, 0, (int)mCurrentPaddingSize);
-            }
-            else{
-                child.setPadding(0, (int)mCurrentPaddingSize, 0, (int)mCurrentPaddingSize);
-            }
+        if (mBottomPaddingMultiply < 0) {
+            mBottomPaddingMultiply = child.getPaddingBottom() / dependency.getY();
         }
-        return true;
+
+        float appBarCurrentHeight = dependency.getY() - mActionBarSize;
+
+        int newTopPadding = (int) (appBarCurrentHeight * mTopPaddingMultiply);
+        int newBottomPadding = (int) (appBarCurrentHeight * mBottomPaddingMultiply);
+
+        child.setY(dependency.getY());
+        child.setPadding(child.getPaddingLeft(), newTopPadding, child.getPaddingRight(), newBottomPadding);
+        dependency.setPadding(dependency.getPaddingLeft(), child.getHeight(), dependency.getPaddingRight(), dependency.getPaddingBottom());
+
+        return false;
+    }
+
+    private float getActionBarSize(Context context) {
+        final TypedArray styledAttributes = context.getTheme().obtainStyledAttributes(new int[]{R.attr.actionBarSize});
+        float actionBarSize = styledAttributes.getDimension(0, 0);
+        styledAttributes.recycle();
+
+        return actionBarSize;
     }
 }

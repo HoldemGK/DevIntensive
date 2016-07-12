@@ -30,7 +30,7 @@ public class PreferencesManager {
     };
 
     public PreferencesManager() {
-        mSharedPreferences = DevintensiveApplication.getSharedPreferences();
+        mSharedPreferences = DevIntensiveApplication.getSharedPreferences();
     }
 
     public void saveUserProfileData(List<String> userFields) {
