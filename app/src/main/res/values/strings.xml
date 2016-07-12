@@ -3,12 +3,12 @@
 
     <!--Вставки-->
     <string name="hint_mobile">Мобильный</string>
-    <string name="hint_email">E-mail</string>
+    <string name="auth_email">E-mail</string>
     <string name="hint_vk">Профиль в VK</string>
     <string name="hint_github">Репозиторий</string>
     <string name="hint_about">О себе</string>
     <string name="hint_login">E-mail</string>
-    <string name="hint_password">Пароль</string>
+    <string name="auth_password">Пароль</string>
 
     <!--Маски-->
     <string name="mask_phone">Маска для номера +х ххх ххх-хх-хх</string>
@@ -38,13 +38,15 @@
     <string name="intent_need_permission">Для работы необходимы разрешения</string>
 
     <!--Экран входа-->
-    <string name="login_forgot_password">Забыли пароль?</string>
+    <string name="auth_remember">Забыли пароль?</string>
     <string name="login_btn">Войти</string>
-    <string name="login_header_text">ВОЙТИ</string>
+    <string name="auth_authorization_enter">ВОЙТИ</string>
 
     <!--Ошибки не верных данных-->
     <string name="error_user_phone_message">Некорректный номер мобильного</string>
     <string name="error_user_mail_message">Некорректный E-mail</string>
     <string name="error_user_vk_message">Некорректный адрес страницы ВК</string>
     <string name="error_user_github_message">Некорректный адрес git</string>
+    <string name="ff_medium">24sp</string>
+    <string name="ff_regular">18</string>
 </resources>

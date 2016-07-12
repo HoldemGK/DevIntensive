@@ -4,7 +4,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 
 import com.softdesign.devintensive.utils.ConstantManager;
-import com.softdesign.devintensive.utils.DevIntensiveApp;
+import com.softdesign.devintensive.utils.DevIntensiveApplication;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class PreferencesManager {
                                             ConstantManager.USER_SELF_KEY};
 
     public PreferencesManager() {
-        this.mSharedPreferences = DevIntensiveApp.getSharedPreferences();
+        this.mSharedPreferences = DevIntensiveApplication.getSharedPreferences();
     }
 
     public void saveUserProfileData(List<String> userData){

@@ -26,7 +26,7 @@
         <item name="android:textSize">@dimen/font_size_18</item>
     </style>
     <style name="drawable_head_txt">
-        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:textSize">@dimen/font_small_14</item>
         <item name="android:textColor">@color/txt_profile</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
@@ -59,7 +59,7 @@
     <style name="user_info_container">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/size_72</item>
-        <item name="android:layout_marginTop">@dimen/spacing_24</item>
+        <item name="android:layout_marginTop">@dimen/spacing_medial_24</item>
         <item name="android:orientation">horizontal</item>
     </style>
 
@@ -70,10 +70,10 @@
         <item name="android:layout_gravity">center_vertical</item>
     </style>
     <style name="icon.left">
-        <item name="android:layout_marginLeft">@dimen/spacing_16</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_normal_16</item>
     </style>
     <style name="icon.right">
-        <item name="android:layout_marginRight">@dimen/spacing_16</item>
+        <item name="android:layout_marginRight">@dimen/spacing_normal_16</item>
     </style>
 
     <style name="input_text_layout">
@@ -81,7 +81,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_marginLeft">@dimen/spacing_16</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_normal_16</item>
     </style>
     <style name="edit_text" parent="@style/text.user_info">
         <item name="android:layout_width">match_parent</item>
@@ -96,7 +96,7 @@
     </style>
     <style name="edit_text.email">
         <item name="android:inputType">textEmailAddress</item>
-        <item name="android:hint">@string/hint_email</item>
+        <item name="android:hint">@string/auth_email</item>
     </style>
     <style name="edit_text.vk">
         <item name="android:inputType">textImeMultiLine</item>
@@ -123,7 +123,7 @@
         <item name="android:inputType">textPassword</item>
         <item name="android:focusable">true</item>
         <item name="android:enabled">true</item>
-        <item name="android:hint">@string/hint_password</item>
+        <item name="android:hint">@string/auth_password</item>
     </style>
 
     <style name="separator_horizontal">
@@ -145,15 +145,15 @@
     <style name="drawer_header">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/size_172</item>
-        <item name="android:paddingTop">@dimen/spacing_24</item>
-        <item name="android:paddingBottom">@dimen/spacing_8</item>
-        <item name="android:paddingLeft">@dimen/spacing_16</item>
-        <item name="android:paddingRight">@dimen/spacing_16</item>
+        <item name="android:paddingTop">@dimen/spacing_medial_24</item>
+        <item name="android:paddingBottom">@dimen/spacing_small_8</item>
+        <item name="android:paddingLeft">@dimen/spacing_normal_16</item>
+        <item name="android:paddingRight">@dimen/spacing_normal_16</item>
     </style>
     <style name="drawer_avatar">
         <item name="android:layout_width">@dimen/size_60</item>
         <item name="android:layout_height">@dimen/size_60</item>
-        <item name="android:layout_marginTop">@dimen/spacing_16</item>
+        <item name="android:layout_marginTop">@dimen/spacing_normal_16</item>
     </style>
 
     <style name="menu_header_txt_holder">
@@ -172,6 +172,11 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:text">@string/my_profile_mail</item>
+    </style>
+
+    <style name="AppTheme.Button.Red" parent="Base.Widget.AppCompat.Button">
+        <item name="android:colorButtonNormal">@color/color_accent</item>
+        <item name="android:textColor">@color/text_Color</item>
     </style>
 
 </resources>

@@ -402,7 +402,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
                 switch (item.getItemId()) {
                     case R.id.menu_exit:
-                        Intent intent = new Intent(getBaseContext(), LogInActivity.class);
+                        Intent intent = new Intent(getBaseContext(), AuthActivity.class);
                         startActivity(intent);
                         break;
                     default:

@@ -16,8 +16,8 @@ import com.softdesign.devintensive.utils.ConstantManager;
 /**
  * Класс для изменения положения панели информации относительно другого элемента.
  */
-public class InfoPanelBehavior extends CoordinatorLayout.Behavior<LinearLayout> {
-    private static final String TAG = ConstantManager.PREFIX_TAG + "InfoPanelBehavior";
+public class UserInfoBehavior extends CoordinatorLayout.Behavior<LinearLayout> {
+    private static final String TAG = ConstantManager.PREFIX_TAG + "UserInfoBehavior";
 
     //Переменные для управления отступами LineatLayout
     private float mMinScroll, mMaxScroll;
@@ -32,7 +32,7 @@ public class InfoPanelBehavior extends CoordinatorLayout.Behavior<LinearLayout> 
     CoordinatorLayout.LayoutParams mNestedScrollParam;
     private int mTopMarginMax;
 
-    public InfoPanelBehavior(Context context, AttributeSet attrs) {
+    public UserInfoBehavior(Context context, AttributeSet attrs) {
         mMinScroll = 0; //Начальный минимальный уровень.
     }
 

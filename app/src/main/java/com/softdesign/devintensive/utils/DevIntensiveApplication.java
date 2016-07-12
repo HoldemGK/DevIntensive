@@ -1,14 +1,11 @@
 package com.softdesign.devintensive.utils;
 
-/**
- * Created by HoldemGK on 28.06.2016.
- */
-
 import android.app.Application;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 public class DevIntensiveApplication extends Application {
+    private static final String TAG = ConstantManager.PREFIX_TAG + "DevIntensiveApplication";
 
     public static SharedPreferences sSharedPreferences;
 
@@ -17,7 +14,6 @@ public class DevIntensiveApplication extends Application {
         super.onCreate();
 
         sSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-
     }
 
     public static SharedPreferences getSharedPreferences() {
