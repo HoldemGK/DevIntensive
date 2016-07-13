@@ -13,9 +13,9 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.RectF;
 
-/*Скругление картинки*/
+import com.squareup.picasso.Transformation;
 
-public class CircleImage {
+public class RoundedImage implements Transformation {
     public static Bitmap getRoundedBitmap(Bitmap bitmap) {
         final Bitmap output = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         final Canvas canvas = new Canvas(output);
@@ -35,5 +35,15 @@ public class CircleImage {
         bitmap.recycle();
 
         return output;
+    }
+
+    @Override
+    public Bitmap transform(Bitmap source) {
+        return getRoundedBitmap(source);
+    }
+
+    @Override
+    public String key() {
+        return "circleTransformation";
     }
 }

@@ -1,14 +1,19 @@
 <resources>
+
+    <!--Шрифты-->
+    <string name="ff_medium">sans-serif</string>
+    <string name="ff_regular">sans-serif-medium</string>
+
     <string name="app_name">Васильев Александр</string>
 
     <!--Вставки-->
-    <string name="hint_mobile">Мобильный</string>
-    <string name="hint_email">E-mail</string>
-    <string name="hint_vk">Профиль в VK</string>
-    <string name="hint_github">Репозиторий</string>
-    <string name="hint_about">О себе</string>
-    <string name="hint_login">E-mail</string>
-    <string name="hint_password">Пароль</string>
+    <string name="profile.phone.hint">Мобильный</string>
+    <string name="profile.mail.hint">E-mail</string>
+    <string name="profile.vk.hint">Профиль в VK</string>
+    <string name="profile.github.hint">Репозиторий</string>
+    <string name="profile.bio.hint">О себе</string>
+    <string name="login.hint">E-mail</string>
+    <string name="password.hint">Пароль</string>
 
     <!--Маски-->
     <string name="mask_phone">Маска для номера +х ххх ххх-хх-хх</string>
@@ -32,19 +37,26 @@
     <string name="avatar_load_from_camera">Сфотографировать</string>
     <string name="avatar_cancel">Отмена</string>
     <string name="select_img">Выберите фото</string>
+    <string name="user_profile.dialog.title">Изменить фотографию профиля</string>
 
     <!--intent события-->
     <string name="intent_error_open_message">Невозможно запустить приложение</string>
     <string name="intent_need_permission">Для работы необходимы разрешения</string>
+    <string name="approve">Разрешить</string>
 
-    <!--Экран входа-->
-    <string name="login_forgot_password">Забыли пароль?</string>
-    <string name="login_btn">Войти</string>
-    <string name="login_header_text">ВОЙТИ</string>
+    <!--AuthActivity-->
+    <string name="auth_remember">Забыли пароль?</string>
+    <string name="auth.authorization_enter">Войти</string>
+    <string name="auth.email">Введите e-mail</string>
+    <string name="auth.password">Введите пароль</string>
+    <string name="auth.login">Войти</string>
 
     <!--Ошибки не верных данных-->
     <string name="error_user_phone_message">Некорректный номер мобильного</string>
     <string name="error_user_mail_message">Некорректный E-mail</string>
     <string name="error_user_vk_message">Некорректный адрес страницы ВК</string>
     <string name="error_user_github_message">Некорректный адрес git</string>
+    <string name="error_correct_profile">Исправьте ошибки в профиле</string>
+
+
 </resources>
